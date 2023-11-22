@@ -1,0 +1,18 @@
+/*Estilizacao do footer*/
+
+.mainFooter{
+    
+    text-align: center;
+    /*background: url("assets/imagens/findlogoriginal.png");*/
+    padding: 10px;
+    background-color: aliceblue;
+    flex-shrink: 0;
+}
+.copyright{
+    color:black;
+    font-size: 12px;
+    margin: 20px;
+}
+.logo_footer{
+    width: 15%;
+}

@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fundo-tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: black;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background: linear-gradient(deepskyblue, rgba(50, 111, 218)), url(/assets/imagens/logistica.png);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    
+}
+
+/* Menu - Header - NavBar */
+
+header {
+    width: 100%;
+    height: 7vh;
+    background-color:  aliceblue;
+}
+
+.logo{
+    width: 18%;
+  
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+
+
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: black;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: blue;
+    transition: all 1.5s ease; 
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/* Centro - Conteudo Principal */
+
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Textos conteudo principal */
+
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(165, 165, 165);
+    text-transform: uppercase;
+}
+
+/* Botões */
+
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover {
+    color: aliceblue;
+    border: none;
+}
+
+.btns button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns button:hover:before {
+    width: 100%;
+}
+
+
+
+/*cadastro*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: blue;
+}
+
+.caixa {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type="button"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+input[type="button"]:hover {
+    background-color: blue;
+}
+
+input[type="submit"] {
+    background-color: blue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: blue;
+}
+
+.mensagem{
+    width: 80%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.chk{
+    margin: 30px 6px  ;
+}
+
+
+
+
+.container {
+    text-align: center;
+    max-width: 600px;
+}
+.p1 {
+    font-size: 2em;
+    color: #ffffff; /* Cor do texto */
+    font-family: Arial, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+.p2{
+    font-size: 1.2em;
+    color: #ffffff; /* Cor do texto */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+/*body{
+    font-family: 'Arial';
+    margin: 0;
+    padding: 0;
+    border:0;
+}
+/*Estilização do HEADER da página
+header{
+    background-color:  rgb(50, 111, 218);
+}
+/*Estilização Logo
+.logo{
+    width: 27%;
+}
+
+/*Estilização do MENU
+nav{
+    padding-left: 120px;
+    right: 40%;
+    position: absolute;
+    top: 70px;
+    text-align: center;
+}
+/*Mudando espaçamento do menu
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; 
+}
+/*Modificando a fonte do menu
+nav a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+/*Quando passar o mouse em cima do link
+nav a:hover{
+    color: white;
+    text-decoration: underline;
+}
+/*Modificando a caixa do cabeçalho
+.logo_caixa{
+    width: 100%;
+    position: relative;
+    margin-right: 950px;
+}*/
